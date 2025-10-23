@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | UMCAT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container nav">
+      <h1 class="logo">UMCAT</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html" class="active">Sign Up</a></li>
+          <li><a href="online admisions.html">Admissions</a></li>
+          <li><a href="Downloads.html">Downloads</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to UMCAT</h1>
+      <p>Profesionalism for Development</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        UMCAT is a center of excellence providing high-quality education to shape the experts of tomorrow. 
+        Our school focuses on academic, cultural, and personal development.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="section bg-light" id="mission">
+    <div class="container">
+      <h2>Our Mission & Vision</h2>
+      <p>
+        Our mission is to nurture young minds, promote innovation, and foster a love of learning.
+        We envision a world where every student reaches their full potential.
+      </p>
+    </div>
+  </section>
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup">
+      <h2>Hello there!</h2>
+      <p>Welcome to UMCAT School of journalism</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function() {
+      // Show popup after page load
+      document.getElementById('popup-overlay').style.display = 'flex';
+    };
+
+    function closePopup() {
+      document.getElementById('popup-overlay').style.display = 'none';
+    }
+  </script>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@umcat.com</p>
+      <p>Phone: +256 778 5088 02</p>
+      <p>Address: 123 Senior quaters, Soroti City</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 UMCAT. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

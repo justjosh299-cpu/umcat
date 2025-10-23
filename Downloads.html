@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downloads | UMCAT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+  
+</header>
+
+
+  <!-- Navigation Bar -->
+  <header>
+    <img src="umcat.png" alt="Website Logo" class="logo">
+    <div class="container nav">
+      <h1 class="logo"><h1>UMCAT</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html" class="active">Sign Up</a></li>
+         
+        </ul>
+      </nav>
+   
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to UMCAT Downloads page</h1>
+      <p>Profesionalism for Development</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2>FEES STRUCTURES</h2>
+      <p>
+        UMCAT is a center of excellence providing high-quality education to shape the citizens. 
+        Our school fees structuters can be downloaded frome any of the links below.
+       <h4 onclick="showConfirm()">Certificate programes <button onclick="startDownloadC()" class="lin">Download</button></h4>
+       <h4>Diploma programes<button onclick="startDownloadD()" class="lin">Download</button></h4> 
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="section bg-light" id="mission">
+    <div class="container">
+      <h2>Timetables</h2>
+      <p><div id="popup-overlay" class="popup-overlay">
+    <div class="popup">
+      <h2>Download Available!</h2>
+      <p>Click below to start your download.</p>
+      <button onclick="startDownload()">Download File</button>
+      <br />
+      <button style="background:#dc3545; margin-top:10px;" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+      // Download handler   UVTAB EXAM TIMETABLE
+    function startDownloadU() {
+      // Replace 'your-file.pdf' with your actual file path
+      const link = document.createElement('a');
+      link.href = 'download files/Draft_Time_Table_for_Vocational_Training_Institutes_Nov-Dec_2025[1].pdf';
+      link.download = 'UVTAB timetable NOV-DEC 2025.pdf';
+      link.click();
+    }
+
+       // Download handler   INTERNAL EXAM TIMETABLE
+    function startDownloadI() {
+      // Replace 'your-file.pdf' with your actual file path
+      const link = document.createElement('a');
+      link.href = 'download files/internal exam timetable.pdf';
+      link.download = ' INTERNAL EXAM timetable NOV-DEC 2025.pdf';
+      link.click();
+    }
+    
+    
+
+       // Download handler   CERTIFICATE PROGRAMES
+    function startDownloadC() {
+      // Replace 'your-file.pdf' with your actual file path
+      const link = document.createElement('a');
+      link.href = 'download files/certificate programes.pdf';
+      link.download = ' Certificate programes structure NOV-DEC 2025.pdf';
+      link.click();
+    }
+
+    
+
+       // Download handler   DIPLOMA PROGRAMES
+    function startDownloadD() {
+      // Replace 'your-file.pdf' with your actual file path
+      const link = document.createElement('a');
+      link.href = 'download files/diploma programes.pdf';
+      link.download = ' Diploma programes structure NOV-DEC 2025.pdf';
+      link.click();
+    }
+
+
+    
+  </script>
+        <h4>UVTAB Draft timetable Nov-Dec 2025<button onclick="startDownloadU()" class="lin">Download</button></h4>
+        <h4>Internal Exam Timetable Nov-Dec 2025<button onclick="startDownloadI()" class="lin">Download</button></h4>
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@umcat.com</p>
+      <p>Phone: +256 778 5088 02</p>
+      <p>Address: 123 Senior quaters, Soroti City</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 UMCAT. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
